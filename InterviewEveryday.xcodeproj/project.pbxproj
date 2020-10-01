@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		01E2C79A252639F90028147D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C799252639F90028147D /* Assets.xcassets */; };
 		01E2C79D252639F90028147D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C79C252639F90028147D /* Preview Assets.xcassets */; };
 		01E2C7A0252639F90028147D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C79E252639F90028147D /* LaunchScreen.storyboard */; };
+		01E2C7AA25263DC20028147D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C7A925263DC20028147D /* GoogleService-Info.plist */; };
 		AF74E9BE8F9750036C261E87 /* Pods_InterviewEveryday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749BBEB1C110BA54AC94966A /* Pods_InterviewEveryday.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		01E2C79C252639F90028147D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		01E2C79F252639F90028147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01E2C7A1252639F90028147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01E2C7A925263DC20028147D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C7DE2A51EFE07C2079D3CE3 /* Pods-InterviewEveryday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewEveryday.release.xcconfig"; path = "Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday.release.xcconfig"; sourceTree = "<group>"; };
 		749BBEB1C110BA54AC94966A /* Pods_InterviewEveryday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewEveryday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE5272F4DEF2629EFEE5510 /* Pods-InterviewEveryday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewEveryday.debug.xcconfig"; path = "Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				01E2C799252639F90028147D /* Assets.xcassets */,
 				01E2C79E252639F90028147D /* LaunchScreen.storyboard */,
 				01E2C7A1252639F90028147D /* Info.plist */,
+				01E2C7A925263DC20028147D /* GoogleService-Info.plist */,
 				01E2C79B252639F90028147D /* Preview Content */,
 			);
 			path = InterviewEveryday;
@@ -88,7 +91,6 @@
 				BFE5272F4DEF2629EFEE5510 /* Pods-InterviewEveryday.debug.xcconfig */,
 				4C7DE2A51EFE07C2079D3CE3 /* Pods-InterviewEveryday.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E2C7A0252639F90028147D /* LaunchScreen.storyboard in Resources */,
+				01E2C7AA25263DC20028147D /* GoogleService-Info.plist in Resources */,
 				01E2C79D252639F90028147D /* Preview Assets.xcassets in Resources */,
 				01E2C79A252639F90028147D /* Assets.xcassets in Resources */,
 			);
