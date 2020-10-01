@@ -13,6 +13,7 @@
 		01E2C79A252639F90028147D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C799252639F90028147D /* Assets.xcassets */; };
 		01E2C79D252639F90028147D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C79C252639F90028147D /* Preview Assets.xcassets */; };
 		01E2C7A0252639F90028147D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C79E252639F90028147D /* LaunchScreen.storyboard */; };
+		AF74E9BE8F9750036C261E87 /* Pods_InterviewEveryday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749BBEB1C110BA54AC94966A /* Pods_InterviewEveryday.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		01E2C79C252639F90028147D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		01E2C79F252639F90028147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01E2C7A1252639F90028147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C7DE2A51EFE07C2079D3CE3 /* Pods-InterviewEveryday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewEveryday.release.xcconfig"; path = "Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday.release.xcconfig"; sourceTree = "<group>"; };
+		749BBEB1C110BA54AC94966A /* Pods_InterviewEveryday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewEveryday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE5272F4DEF2629EFEE5510 /* Pods-InterviewEveryday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewEveryday.debug.xcconfig"; path = "Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF74E9BE8F9750036C261E87 /* Pods_InterviewEveryday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				01E2C792252639F90028147D /* InterviewEveryday */,
 				01E2C791252639F90028147D /* Products */,
+				27E4E20C67BEFBCED9CAAF85 /* Pods */,
+				EDBD329E6A103DDF8ED335AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		27E4E20C67BEFBCED9CAAF85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFE5272F4DEF2629EFEE5510 /* Pods-InterviewEveryday.debug.xcconfig */,
+				4C7DE2A51EFE07C2079D3CE3 /* Pods-InterviewEveryday.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EDBD329E6A103DDF8ED335AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				749BBEB1C110BA54AC94966A /* Pods_InterviewEveryday.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01E2C7A4252639F90028147D /* Build configuration list for PBXNativeTarget "InterviewEveryday" */;
 			buildPhases = (
+				8B6FBE044A36E045546000CF /* [CP] Check Pods Manifest.lock */,
 				01E2C78C252639F90028147D /* Sources */,
 				01E2C78D252639F90028147D /* Frameworks */,
 				01E2C78E252639F90028147D /* Resources */,
+				AFE195306E14087B9E16AACC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B6FBE044A36E045546000CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InterviewEveryday-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE195306E14087B9E16AACC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01E2C78C252639F90028147D /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		01E2C7A5252639F90028147D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE5272F4DEF2629EFEE5510 /* Pods-InterviewEveryday.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +374,7 @@
 		};
 		01E2C7A6252639F90028147D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7DE2A51EFE07C2079D3CE3 /* Pods-InterviewEveryday.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

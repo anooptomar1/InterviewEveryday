@@ -1,0 +1,6 @@
+framework module Pods_InterviewEveryday {
+  umbrella header "Pods-InterviewEveryday-umbrella.h"
+
+  export *
+  module * { export * }
+}
