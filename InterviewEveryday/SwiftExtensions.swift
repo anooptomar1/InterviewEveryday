@@ -16,6 +16,7 @@ extension UIColor {
     static let mossGreen = UIColor(named: "mossgreen")!
     static let honeydew = UIColor(named: "honeydew")!
     static let lightGreen = UIColor(named: "lightgreen")!
+    static let forestgreen = UIColor(named: "forestgreen")!
 }
 
 extension Color {
@@ -25,4 +26,5 @@ extension Color {
     static let mossGreen = Color(UIColor.mossGreen)
     static let honeydew = Color(UIColor.honeydew)
     static let lightGreen = Color(UIColor.lightGreen)
+    static let forestgreen = Color(UIColor.forestgreen)
 }

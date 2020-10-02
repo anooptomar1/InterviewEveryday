@@ -13,6 +13,9 @@
 		0127A3FF25265B17000CD681 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A3FE25265B17000CD681 /* User.swift */; };
 		0127A40625265D5F000CD681 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A40525265D5F000CD681 /* MotherView.swift */; };
 		0127A40925265DB6000CD681 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A40825265DB6000CD681 /* LaunchScreen.swift */; };
+		0127A40D25276591000CD681 /* ExpandedQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A40C25276591000CD681 /* ExpandedQuestionView.swift */; };
+		0127A41025276EBE000CD681 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A40F25276EBE000CD681 /* TimerView.swift */; };
+		0127A413252775C9000CD681 /* ExpandedAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A412252775C9000CD681 /* ExpandedAnswerView.swift */; };
 		01E2C794252639F90028147D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2C793252639F90028147D /* AppDelegate.swift */; };
 		01E2C796252639F90028147D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2C795252639F90028147D /* SceneDelegate.swift */; };
 		01E2C798252639F90028147D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2C797252639F90028147D /* ContentView.swift */; };
@@ -43,6 +46,9 @@
 		0127A3FE25265B17000CD681 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0127A40525265D5F000CD681 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		0127A40825265DB6000CD681 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		0127A40C25276591000CD681 /* ExpandedQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedQuestionView.swift; sourceTree = "<group>"; };
+		0127A40F25276EBE000CD681 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		0127A412252775C9000CD681 /* ExpandedAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedAnswerView.swift; sourceTree = "<group>"; };
 		01E2C790252639F90028147D /* InterviewEveryday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewEveryday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E2C793252639F90028147D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01E2C795252639F90028147D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +120,9 @@
 				0127A40525265D5F000CD681 /* MotherView.swift */,
 				01FD227F252643D100118F4B /* QuestionDayView.swift */,
 				0127A3F52526532E000CD681 /* QuestionView.swift */,
+				0127A40C25276591000CD681 /* ExpandedQuestionView.swift */,
+				0127A412252775C9000CD681 /* ExpandedAnswerView.swift */,
+				0127A40F25276EBE000CD681 /* TimerView.swift */,
 				01E2C799252639F90028147D /* Assets.xcassets */,
 				01E2C79E252639F90028147D /* LaunchScreen.storyboard */,
 				01E2C7A1252639F90028147D /* Info.plist */,
@@ -298,6 +307,9 @@
 				0127A40925265DB6000CD681 /* LaunchScreen.swift in Sources */,
 				01FD229B2526485800118F4B /* SwiftExtensions.swift in Sources */,
 				0127A3FC25265783000CD681 /* QuestionStore.swift in Sources */,
+				0127A41025276EBE000CD681 /* TimerView.swift in Sources */,
+				0127A40D25276591000CD681 /* ExpandedQuestionView.swift in Sources */,
+				0127A413252775C9000CD681 /* ExpandedAnswerView.swift in Sources */,
 				01E2C796252639F90028147D /* SceneDelegate.swift in Sources */,
 				0127A3FF25265B17000CD681 /* User.swift in Sources */,
 				0127A3F62526532E000CD681 /* QuestionView.swift in Sources */,

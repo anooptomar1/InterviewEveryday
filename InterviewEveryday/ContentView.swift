@@ -12,12 +12,25 @@ struct ContentView: View {
     @EnvironmentObject var questionStore : QuestionStore
     @EnvironmentObject var userInfo : UserData
     
+    @State var currentQuestion = Question(questionid: "", questiontext: "", timeAlloc: 0, buzzwords: [], answer: "", level: 1, prof: 1)
+    
+    @State var toggleQuestionView = false
+    @State var toggleAnswerView = false
+    
     var body: some View {
         
         NavigationView {
             VStack {
                 
                 // navigation links
+                NavigationLink(destination: ExpandedQuestionView(question: currentQuestion, toggleQuestionView: self.$toggleQuestionView, toggleAnswerView: self.$toggleAnswerView)
+                    .environmentObject(self.userInfo)
+                    .environmentObject(self.questionStore)
+                        .navigationBarBackButtonHidden(true)
+                    , isActive: self.$toggleQuestionView)
+                {
+                    EmptyView()
+                }
 
                 // list of questions
                 ScrollView {
@@ -49,7 +62,7 @@ struct ContentView: View {
                             .padding(.bottom,4)
                         
                         ForEach(0..<self.questionStore.level1Questions.count, id: \.self) {index in
-                            QuestionView(question: self.questionStore.level1Questions[index])
+                            QuestionView(toggleQuestionView: self.$toggleQuestionView, question: self.questionStore.level1Questions[index], currentQ: self.$currentQuestion)
                                 .padding(.bottom,4)
                                 .environmentObject(self.userInfo)
                             

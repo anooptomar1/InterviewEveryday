@@ -9,7 +9,12 @@ import SwiftUI
 
 struct QuestionView: View {
     
+    @Binding var toggleQuestionView : Bool
     @State var question : Question
+    
+    @EnvironmentObject var questionStore : QuestionStore
+    @EnvironmentObject var userInfo : UserData
+    @Binding var currentQ : Question
     
     var body: some View {
         VStack {
@@ -60,6 +65,10 @@ struct QuestionView: View {
                     }
                 }.padding(.vertical,6)
             }
+        }
+        .onTapGesture {
+            currentQ = question
+            self.toggleQuestionView.toggle()
         }
         .frame(maxWidth: .infinity)
         .frame(height: screen.height / 12)
