@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0127A3F62526532E000CD681 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A3F52526532E000CD681 /* QuestionView.swift */; };
+		0127A3F92526561A000CD681 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A3F82526561A000CD681 /* Question.swift */; };
+		0127A3FC25265783000CD681 /* QuestionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A3FB25265783000CD681 /* QuestionStore.swift */; };
+		0127A3FF25265B17000CD681 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A3FE25265B17000CD681 /* User.swift */; };
+		0127A40625265D5F000CD681 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A40525265D5F000CD681 /* MotherView.swift */; };
+		0127A40925265DB6000CD681 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0127A40825265DB6000CD681 /* LaunchScreen.swift */; };
 		01E2C794252639F90028147D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2C793252639F90028147D /* AppDelegate.swift */; };
 		01E2C796252639F90028147D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2C795252639F90028147D /* SceneDelegate.swift */; };
 		01E2C798252639F90028147D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2C797252639F90028147D /* ContentView.swift */; };
@@ -14,10 +20,29 @@
 		01E2C79D252639F90028147D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C79C252639F90028147D /* Preview Assets.xcassets */; };
 		01E2C7A0252639F90028147D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C79E252639F90028147D /* LaunchScreen.storyboard */; };
 		01E2C7AA25263DC20028147D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01E2C7A925263DC20028147D /* GoogleService-Info.plist */; };
+		01FD2280252643D100118F4B /* QuestionDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD227F252643D100118F4B /* QuestionDayView.swift */; };
+		01FD228E2526445400118F4B /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD22832526445400118F4B /* Lato-Italic.ttf */; };
+		01FD228F2526445400118F4B /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD22842526445400118F4B /* Lato-LightItalic.ttf */; };
+		01FD22902526445400118F4B /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD22852526445400118F4B /* Lato-Thin.ttf */; };
+		01FD22912526445400118F4B /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD22862526445400118F4B /* Lato-Bold.ttf */; };
+		01FD22922526445400118F4B /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD22872526445400118F4B /* Lato-Black.ttf */; };
+		01FD22932526445400118F4B /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD22882526445400118F4B /* Lato-Regular.ttf */; };
+		01FD22942526445400118F4B /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD22892526445400118F4B /* Lato-BlackItalic.ttf */; };
+		01FD22952526445400118F4B /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 01FD228A2526445400118F4B /* OFL.txt */; };
+		01FD22962526445400118F4B /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD228B2526445400118F4B /* Lato-BoldItalic.ttf */; };
+		01FD22972526445400118F4B /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD228C2526445400118F4B /* Lato-Light.ttf */; };
+		01FD22982526445400118F4B /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01FD228D2526445400118F4B /* Lato-ThinItalic.ttf */; };
+		01FD229B2526485800118F4B /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FD229A2526485800118F4B /* SwiftExtensions.swift */; };
 		AF74E9BE8F9750036C261E87 /* Pods_InterviewEveryday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749BBEB1C110BA54AC94966A /* Pods_InterviewEveryday.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0127A3F52526532E000CD681 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		0127A3F82526561A000CD681 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0127A3FB25265783000CD681 /* QuestionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStore.swift; sourceTree = "<group>"; };
+		0127A3FE25265B17000CD681 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0127A40525265D5F000CD681 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		0127A40825265DB6000CD681 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		01E2C790252639F90028147D /* InterviewEveryday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewEveryday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E2C793252639F90028147D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01E2C795252639F90028147D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +52,19 @@
 		01E2C79F252639F90028147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01E2C7A1252639F90028147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01E2C7A925263DC20028147D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		01FD227F252643D100118F4B /* QuestionDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDayView.swift; sourceTree = "<group>"; };
+		01FD22832526445400118F4B /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		01FD22842526445400118F4B /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		01FD22852526445400118F4B /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		01FD22862526445400118F4B /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		01FD22872526445400118F4B /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		01FD22882526445400118F4B /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		01FD22892526445400118F4B /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		01FD228A2526445400118F4B /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		01FD228B2526445400118F4B /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		01FD228C2526445400118F4B /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		01FD228D2526445400118F4B /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		01FD229A2526485800118F4B /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
 		4C7DE2A51EFE07C2079D3CE3 /* Pods-InterviewEveryday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewEveryday.release.xcconfig"; path = "Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday.release.xcconfig"; sourceTree = "<group>"; };
 		749BBEB1C110BA54AC94966A /* Pods_InterviewEveryday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterviewEveryday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE5272F4DEF2629EFEE5510 /* Pods-InterviewEveryday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterviewEveryday.debug.xcconfig"; path = "Target Support Files/Pods-InterviewEveryday/Pods-InterviewEveryday.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,12 +103,21 @@
 		01E2C792252639F90028147D /* InterviewEveryday */ = {
 			isa = PBXGroup;
 			children = (
-				01E2C793252639F90028147D /* AppDelegate.swift */,
 				01E2C795252639F90028147D /* SceneDelegate.swift */,
+				01E2C793252639F90028147D /* AppDelegate.swift */,
+				01FD229A2526485800118F4B /* SwiftExtensions.swift */,
+				0127A3F82526561A000CD681 /* Question.swift */,
+				0127A3FE25265B17000CD681 /* User.swift */,
+				0127A3FB25265783000CD681 /* QuestionStore.swift */,
+				0127A40825265DB6000CD681 /* LaunchScreen.swift */,
 				01E2C797252639F90028147D /* ContentView.swift */,
+				0127A40525265D5F000CD681 /* MotherView.swift */,
+				01FD227F252643D100118F4B /* QuestionDayView.swift */,
+				0127A3F52526532E000CD681 /* QuestionView.swift */,
 				01E2C799252639F90028147D /* Assets.xcassets */,
 				01E2C79E252639F90028147D /* LaunchScreen.storyboard */,
 				01E2C7A1252639F90028147D /* Info.plist */,
+				01FD22822526445400118F4B /* Lato */,
 				01E2C7A925263DC20028147D /* GoogleService-Info.plist */,
 				01E2C79B252639F90028147D /* Preview Content */,
 			);
@@ -83,6 +130,24 @@
 				01E2C79C252639F90028147D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		01FD22822526445400118F4B /* Lato */ = {
+			isa = PBXGroup;
+			children = (
+				01FD22832526445400118F4B /* Lato-Italic.ttf */,
+				01FD22842526445400118F4B /* Lato-LightItalic.ttf */,
+				01FD22852526445400118F4B /* Lato-Thin.ttf */,
+				01FD22862526445400118F4B /* Lato-Bold.ttf */,
+				01FD22872526445400118F4B /* Lato-Black.ttf */,
+				01FD22882526445400118F4B /* Lato-Regular.ttf */,
+				01FD22892526445400118F4B /* Lato-BlackItalic.ttf */,
+				01FD228A2526445400118F4B /* OFL.txt */,
+				01FD228B2526445400118F4B /* Lato-BoldItalic.ttf */,
+				01FD228C2526445400118F4B /* Lato-Light.ttf */,
+				01FD228D2526445400118F4B /* Lato-ThinItalic.ttf */,
+			);
+			path = Lato;
 			sourceTree = "<group>";
 		};
 		27E4E20C67BEFBCED9CAAF85 /* Pods */ = {
@@ -161,10 +226,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01FD228E2526445400118F4B /* Lato-Italic.ttf in Resources */,
+				01FD22922526445400118F4B /* Lato-Black.ttf in Resources */,
+				01FD228F2526445400118F4B /* Lato-LightItalic.ttf in Resources */,
+				01FD22902526445400118F4B /* Lato-Thin.ttf in Resources */,
+				01FD22942526445400118F4B /* Lato-BlackItalic.ttf in Resources */,
 				01E2C7A0252639F90028147D /* LaunchScreen.storyboard in Resources */,
+				01FD22952526445400118F4B /* OFL.txt in Resources */,
+				01FD22982526445400118F4B /* Lato-ThinItalic.ttf in Resources */,
 				01E2C7AA25263DC20028147D /* GoogleService-Info.plist in Resources */,
 				01E2C79D252639F90028147D /* Preview Assets.xcassets in Resources */,
+				01FD22932526445400118F4B /* Lato-Regular.ttf in Resources */,
 				01E2C79A252639F90028147D /* Assets.xcassets in Resources */,
+				01FD22912526445400118F4B /* Lato-Bold.ttf in Resources */,
+				01FD22962526445400118F4B /* Lato-BoldItalic.ttf in Resources */,
+				01FD22972526445400118F4B /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +294,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E2C794252639F90028147D /* AppDelegate.swift in Sources */,
+				01FD2280252643D100118F4B /* QuestionDayView.swift in Sources */,
+				0127A40925265DB6000CD681 /* LaunchScreen.swift in Sources */,
+				01FD229B2526485800118F4B /* SwiftExtensions.swift in Sources */,
+				0127A3FC25265783000CD681 /* QuestionStore.swift in Sources */,
 				01E2C796252639F90028147D /* SceneDelegate.swift in Sources */,
+				0127A3FF25265B17000CD681 /* User.swift in Sources */,
+				0127A3F62526532E000CD681 /* QuestionView.swift in Sources */,
+				0127A3F92526561A000CD681 /* Question.swift in Sources */,
 				01E2C798252639F90028147D /* ContentView.swift in Sources */,
+				0127A40625265D5F000CD681 /* MotherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
