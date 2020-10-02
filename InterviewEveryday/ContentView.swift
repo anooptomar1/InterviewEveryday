@@ -39,7 +39,7 @@ struct ContentView: View {
                                     
                             }.padding(.horizontal)
                             .padding(.top,4)
-                            .padding(.bottom,6)
+                            .padding(.bottom,4)
                             
                             Text("planning for your next interview has never been easier")
                                 .font(Font.custom("Lato-Regular", size: 14))
