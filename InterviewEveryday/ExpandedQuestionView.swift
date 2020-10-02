@@ -17,7 +17,7 @@ struct ExpandedQuestionView: View {
         VStack {
             
             HStack {
-                Image("arrowback")
+                Image(systemName: "arrow.left")
                     .font(.system(size: 24))
                     .foregroundColor(.forestgreen)
                     .padding()
@@ -30,7 +30,7 @@ struct ExpandedQuestionView: View {
             .padding(.bottom,8)
             
             Text(question.questiontext)
-                .font(Font.custom("Lato-Bold", size: 60))
+                .font(Font.custom("Lato-Bold", size: 54))
                 .multilineTextAlignment(.center)
             
             // Timer

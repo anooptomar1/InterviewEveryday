@@ -9,7 +9,20 @@ import SwiftUI
 
 struct LaunchScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("plan")
+                .font(Font.custom("Lato-Bold", size: 42))
+                .foregroundColor(.green)
+            Text("terview")
+                .padding(.leading,-6)
+                .font(Font.custom("Lato-Bold", size: 42))
+            
+            Image("planticon")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30,height:30)
+                
+        }
     }
 }
 

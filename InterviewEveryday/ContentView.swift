@@ -31,6 +31,15 @@ struct ContentView: View {
                 {
                     EmptyView()
                 }
+                
+                NavigationLink(destination: ExpandedAnswerView(question: currentQuestion, toggleAnswerView: self.$toggleAnswerView)
+                    .environmentObject(self.userInfo)
+                    .environmentObject(self.questionStore)
+                        .navigationBarBackButtonHidden(true)
+                    , isActive: self.$toggleAnswerView)
+                {
+                    EmptyView()
+                }
 
                 // list of questions
                 ScrollView {

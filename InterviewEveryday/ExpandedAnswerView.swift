@@ -10,38 +10,71 @@ import SwiftUI
 struct ExpandedAnswerView: View {
     
     @State var question : Question
-    @Binding var toggleQuestionView : Bool
     @Binding var toggleAnswerView : Bool
     
     var body: some View {
         VStack {
             
             HStack {
-                Image("arrowback")
+                Image(systemName: "house")
                     .font(.system(size: 24))
                     .foregroundColor(.forestgreen)
                     .padding()
                     .onTapGesture {
-                        self.toggleQuestionView.toggle()
+                        self.toggleAnswerView.toggle()
                     }
                 
                 Spacer()
             }.padding(.top,16)
             .padding(.bottom,8)
             
+            
+            VStack {
+                HStack {
+                    Text("General Buzzwords:")
+                        .font(Font.custom("Lato-Bold", size: 28))
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom,6)
+                    
+                    Spacer()
+                }
+                
+                HStack {
+                    
+                    ForEach (0..<self.question.buzzwords.count, id: \.self) { index in
+                        
+                        Text("• " + question.buzzwords[index])
+                            .font(Font.custom("Lato-Bold", size: 14))
+                        
+                    }
+                    
+                }
+            }.padding(.horizontal)
+            .padding(.bottom,8)
+            
             HStack {
-                Text("General Buzzwords")
+                
+                Text("Your answer should include: ")
                     .font(Font.custom("Lato-Bold", size: 28))
-                    .multilineTextAlignment(.center)
+                    .padding(.bottom,6)
+                    
                 
                 Spacer()
-            }
+                
+            }.padding(.leading)
             
-            // Timer
-            TimerView(timeAlloc: question.timeAlloc, toggleAnswerView: self.$toggleAnswerView)
+            HStack {
+                
+                Text(question.answer)
+                    .lineLimit(nil)
+                    .font(Font.custom("Lato-Bold", size: 18))
+                
+                Spacer()
+                
+            }.padding(.horizontal)
             
-            Text("You have " + String(question.timeAlloc) + " minutes to answer!")
-                .font(Font.custom("Lato-Regular", size: 18))
+           
+            
             Spacer()
             
             
@@ -56,6 +89,6 @@ struct ExpandedAnswerView: View {
 
 struct ExpandedAnswerView_Previews: PreviewProvider {
     static var previews: some View {
-        ExpandedAnswerView(question: Question(questionid: "", questiontext: "Tell me about a time you earned the trust of a group.", timeAlloc: 3, buzzwords: [], answer: "Bruh", level: 1, prof: 1), toggleQuestionView: .constant(true), toggleAnswerView: .constant(false))
+        ExpandedAnswerView(question: Question(questionid: "", questiontext: "Tell me about a time you earned the trust of a group.", timeAlloc: 3, buzzwords: [], answer: "Bruh", level: 1, prof: 1), toggleAnswerView: .constant(false))
     }
 }

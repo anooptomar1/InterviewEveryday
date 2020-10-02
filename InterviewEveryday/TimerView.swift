@@ -49,7 +49,7 @@ struct TimerView: View {
                       
                       Button(action: {
                           
-                          if self.count == timeAlloc * 60 {
+                          if self.count == timeAlloc {
                               
                               self.count = 0
                               withAnimation(.default){
@@ -143,7 +143,7 @@ struct TimerView: View {
             
             if self.start{
                 
-                if self.count != timeAlloc * 60 {
+                if self.count != timeAlloc {
                     
                     self.count += 1
                     print("hello")
