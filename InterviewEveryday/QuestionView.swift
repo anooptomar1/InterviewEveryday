@@ -24,7 +24,7 @@ struct QuestionView: View {
                 VStack {
                     HStack {
                         Text("Question:")
-                    .font(Font.custom("Lato-Regular", size: 14))
+                    .font(Font.custom("Lato-Regular", size: 12))
                     
                         Spacer()
                 
@@ -32,8 +32,8 @@ struct QuestionView: View {
             
                     HStack {
                         Text(question.questiontext)
-                            .font(Font.custom("Lato-Regular", size: 20))
-                            .lineLimit(nil)
+                            .font(Font.custom("Lato-Regular", size: 17))
+                            
                     
                         Spacer()
                     }
@@ -46,10 +46,44 @@ struct QuestionView: View {
                         Text("Level: ")
                             .font(Font.custom("Lato-Regular", size: 12))
                         
+                        if (question.level == 1) {
                             Image("sunflower")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 18,height:18)
+                        } else if (question.level == 2) {
+                            
+                            HStack {
+                                Image("sunflower")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 18,height:18)
+                                
+                                Image("sunflower")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 18,height:18)
+                            }
+                            
+                        } else {
+                            HStack {
+                                Image("sunflower")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 18,height:18)
+                                
+                                Image("sunflower")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 18,height:18)
+                                
+                                Image("sunflower")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 18,height:18)
+                            }
+                            
+                        }
                         
                     }
                     Spacer()

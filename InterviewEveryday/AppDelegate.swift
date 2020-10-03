@@ -17,10 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions:
             [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        Firestore.firestore().collection("doodoohead").addDocument(data: [
-            
-            "doodoo" : "of the doodoo"
-        ])
         return true
       }
 

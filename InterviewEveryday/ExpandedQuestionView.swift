@@ -30,7 +30,7 @@ struct ExpandedQuestionView: View {
             .padding(.bottom,8)
             
             Text(question.questiontext)
-                .font(Font.custom("Lato-Bold", size: 54))
+                .font(Font.custom("Lato-Bold", size: 48))
                 .multilineTextAlignment(.center)
             
             // Timer

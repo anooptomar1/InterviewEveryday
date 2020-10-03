@@ -31,7 +31,7 @@ struct ExpandedAnswerView: View {
             
             VStack {
                 HStack {
-                    Text("General Buzzwords:")
+                    Text("Main Takeaways (TL;DR):")
                         .font(Font.custom("Lato-Bold", size: 28))
                         .multilineTextAlignment(.center)
                         .padding(.bottom,6)
@@ -39,12 +39,13 @@ struct ExpandedAnswerView: View {
                     Spacer()
                 }
                 
-                HStack {
+                VStack {
                     
                     ForEach (0..<self.question.buzzwords.count, id: \.self) { index in
                         
                         Text("• " + question.buzzwords[index])
-                            .font(Font.custom("Lato-Bold", size: 14))
+                            .font(Font.custom("Lato-Regular", size: 14))
+                            .padding(.bottom,8)
                         
                     }
                     
@@ -67,7 +68,7 @@ struct ExpandedAnswerView: View {
                 
                 Text(question.answer)
                     .lineLimit(nil)
-                    .font(Font.custom("Lato-Bold", size: 18))
+                    .font(Font.custom("Lato-Regular", size: 18))
                 
                 Spacer()
                 
