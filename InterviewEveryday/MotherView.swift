@@ -23,6 +23,16 @@ struct MotherView: View {
                 LaunchScreen()
                     .onAppear(perform: {
                         
+                        
+                        
+                        questionStore.fetchLevel3Questions { goon in
+                            print(goon)
+                        }
+                        
+                        questionStore.fetchLevel2Questions { goon in
+                            print(goon)
+                        }
+                        
                         questionStore.fetchLevel1Questions { goon in
                             print(goon)
                         }

@@ -67,6 +67,68 @@ class QuestionStore : ObservableObject {
         })
             
     }
+    
+    func fetchLevel2Questions(completion: @escaping (Bool) -> Void) {
+        
+        db.collection("level2").getDocuments(completion: {(querySnapshot, error) in
+            
+            if let err = error {
+                print("Error in fetching docs: \(err)")
+                completion(false)
+            } else {
+                for document in querySnapshot!.documents {
+                    
+                    print("success")
+                    let data = document.data()
+                    let qid = document.documentID
+                    let questiontext = data["questiontext"] as? String ?? "Question content"
+                    let timeAlloc = data["timeAlloc"] as? Int ?? 3
+                    let buzzwords = data["buzzwords"] as? [String] ?? []
+                    let answer = data["answer"] as? String ?? "Answer content"
+                    let level = data["level"] as? Int ?? 1
+                    
+                    let newQuestion = Question(questionid: qid, questiontext: questiontext, timeAlloc: timeAlloc, buzzwords: buzzwords, answer: answer, level: level, prof: 1)
+                    
+                    self.level1Questions.append(newQuestion)
+                    
+                    
+                }
+                completion(true)
+            }
+        })
+            
+    }
+    
+    func fetchLevel3Questions(completion: @escaping (Bool) -> Void) {
+        
+        db.collection("level3").getDocuments(completion: {(querySnapshot, error) in
+            
+            if let err = error {
+                print("Error in fetching docs: \(err)")
+                completion(false)
+            } else {
+                for document in querySnapshot!.documents {
+                    
+                    print("success")
+                    let data = document.data()
+                    let qid = document.documentID
+                    let questiontext = data["questiontext"] as? String ?? "Question content"
+                    let timeAlloc = data["timeAlloc"] as? Int ?? 3
+                    let buzzwords = data["buzzwords"] as? [String] ?? []
+                    let answer = data["answer"] as? String ?? "Answer content"
+                    let level = data["level"] as? Int ?? 1
+                    
+                    let newQuestion = Question(questionid: qid, questiontext: questiontext, timeAlloc: timeAlloc, buzzwords: buzzwords, answer: answer, level: level, prof: 1)
+                    
+                    self.level1Questions.append(newQuestion)
+                    
+                    
+                }
+                completion(true)
+            }
+        })
+            
+    }
         
 }
     
