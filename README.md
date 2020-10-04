@@ -1,5 +1,11 @@
 # InterviewEveryday - planterview
 
+<p float="left">
+  <img src="images/frontpage.png" width="300" />
+  <img src="images/questionpage.png" width="300" /> 
+  <img src="images/answerpage.png" width="300" />
+</p>
+
 ## Inspiration
 We've all been there - the night before an interview, struggling to answer "tell me about yourself." A seemingly simple question, but alas, we blank. Planterview is there for you. Plan your answers in advance and get comfortable with interview questions, so you can ace every inquiry they throw your way.
 
