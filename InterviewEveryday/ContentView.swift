@@ -67,7 +67,7 @@ struct ContentView: View {
                                 .font(Font.custom("Lato-Regular", size: 14))
                         }.padding(.bottom)
                         
-                        QuestionDayView()
+                        QuestionDayView(toggleQuestionView: self.$toggleQuestionView, question: self.questionStore.qotD, currentQ: self.$currentQuestion)
                             .padding(.bottom,4)
                         
                         ForEach(0..<self.questionStore.level1Questions.count, id: \.self) {index in

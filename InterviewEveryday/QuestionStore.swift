@@ -15,7 +15,7 @@ class QuestionStore : ObservableObject {
     @Published var level1Questions : [Question] = []
     
     func fetchQotD(completion: @escaping (Question) -> Void) {
-        db.collection("level1").document("questionoftheday").addSnapshotListener ({(snapshot, error) in
+        db.collection("level2").document("questionoftheday").addSnapshotListener ({(snapshot, error) in
                 if let err = error {
                     print("Error fetching: \(err)")
                     completion(self.qotD)

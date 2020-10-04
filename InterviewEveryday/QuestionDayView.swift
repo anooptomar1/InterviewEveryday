@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct QuestionDayView: View {
+    
+    @Binding var toggleQuestionView : Bool
+    @State var question : Question
+    
+    @EnvironmentObject var questionStore : QuestionStore
+    @EnvironmentObject var userInfo : UserData
+    @Binding var currentQ : Question
+    
     var body: some View {
         VStack {
             
@@ -17,6 +25,10 @@ struct QuestionDayView: View {
                     
                 
             }
+        }
+        .onTapGesture {
+            currentQ = question
+            self.toggleQuestionView.toggle()
         }
         .frame(maxWidth: .infinity)
         .frame(height: screen.height / 8)
@@ -28,10 +40,10 @@ struct QuestionDayView: View {
     }
 }
 
-struct QuestionDayView_Previews: PreviewProvider {
-    static var previews: some View {
-        QuestionDayView()
-    }
-}
+//struct QuestionDayView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        QuestionDayView()
+//    }
+//}
 
 let screen = UIScreen.main.bounds

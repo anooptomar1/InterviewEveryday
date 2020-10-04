@@ -43,9 +43,13 @@ struct ExpandedAnswerView: View {
                     
                     ForEach (0..<self.question.buzzwords.count, id: \.self) { index in
                         
-                        Text("• " + question.buzzwords[index])
-                            .font(Font.custom("Lato-Regular", size: 14))
-                            .padding(.bottom,8)
+                        HStack {
+                            Text("• " + question.buzzwords[index])
+                                .font(Font.custom("Lato-Regular", size: 14))
+                                .padding(.bottom,8)
+                            
+                            Spacer()
+                        }
                         
                     }
                     

@@ -23,19 +23,25 @@ struct MotherView: View {
                 LaunchScreen()
                     .onAppear(perform: {
                         
+                        questionStore.fetchLevel2Questions { goon in
+                            print(goon)
+                        }
                         
+                        
+                        
+                        questionStore.fetchLevel1Questions { goon in
+                            print(goon)
+                        }
                         
                         questionStore.fetchLevel3Questions { goon in
                             print(goon)
                         }
                         
-                        questionStore.fetchLevel2Questions { goon in
-                            print(goon)
-                        }
+                        questionStore.level1Questions.shuffle()
                         
-                        questionStore.fetchLevel1Questions { goon in
-                            print(goon)
-                        }
+                        questionStore.fetchQotD(completion: { q in
+                            print(q)
+                        })
                         
                         userInfo.firstName = "Bahar"
                     })
